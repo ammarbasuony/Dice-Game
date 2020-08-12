@@ -144,5 +144,15 @@
     left: unset;
   }
 
+  @media (max-width: 414px) {
+    .dice-cube.second {
+      right: 122px;
+    }
+    
+    .dice-cube.first {
+      left: 20px;
+    }
+  }
+
   @import url(../oneDice/oneDice.css);
 </style>

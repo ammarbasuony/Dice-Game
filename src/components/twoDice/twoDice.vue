@@ -73,7 +73,7 @@
         </div>
       </div>
 
-      <a href="#" class="roll-dice" @click.prevent="getRandomNumber(1, 6)">Roll Dice</a>
+      <a href="#" class="roll-dice" @click.prevent="getRandomNumber(1, 6)">Roll Dices</a>
     </section>
   </div>
 </template>
@@ -89,12 +89,15 @@
     },
     methods: {
       getRandomNumber(min, max) {
+        var _this = this;
         this.activeClassOne = ``;
         this.activeClassTwo = ``;
         min = Math.ceil(min);
         max = Math.floor(max);
-        this.activeClassOne = `side-${Math.floor(Math.random() * max) + min}`;
-        this.activeClassTwo = `side-${Math.floor(Math.random() * max) + min}`;
+        setTimeout(function () {
+          _this.activeClassOne = `side-${Math.floor(Math.random() * max) + min}`;
+          _this.activeClassTwo = `side-${Math.floor(Math.random() * max) + min}`;
+        }, 30);
       }
     }
   }
@@ -131,7 +134,7 @@
     width: 302px;
     height: 170px;
   }
-  
+
   .dice-cube {
     cursor: normal !important;
   }

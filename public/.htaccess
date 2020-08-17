@@ -2,10 +2,12 @@
 
   RewriteEngine On
   RewriteBase /Tools/Dice/
-  RewriteRule ^index\.html$ - [L]
+  RewriteRule ^Tools/Dice/index\.html$ - [L]
+  RewriteCond %{HTTPS} off
+  RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
   RewriteCond %{REQUEST_FILENAME} !-l
-  RewriteRule . /index.html [L]
+  RewriteRule . /Tools/Dice/index.html [L]
 
 </IfModule>

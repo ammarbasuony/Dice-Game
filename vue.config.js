@@ -1,3 +1,3 @@
 module.exports = {
-    publicPath: '/Tools/Dice/'
+    publicPath: '/All/Practice/Dice/'
 }

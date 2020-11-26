@@ -22,7 +22,7 @@ const routes = [
 
 const router = new VueRouter({
     mode: 'history',
-    base: '/Tools/Dice/',
+    base: '/All/Practice/Dice/',
     routes
 })
 

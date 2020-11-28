@@ -40,4 +40,8 @@
     color: #fff;
     border-color: #000;
   }
+
+  .ammar {
+    display: none;
+  }
 </style>

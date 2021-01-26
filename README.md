@@ -1,5 +1,5 @@
 # Dice Game
-A rolling dice game build with Vue.js.\
+A rolling dice game build with Vue.js
 
 ## Project setup
 ```
